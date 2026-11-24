@@ -21,7 +21,8 @@ def setup_data_dir(monkeypatch):
     for sub in ["geo_points", "coord_transformed", "track_segments", "dwell_events",
                 "grid_index", "heatmap", "dedup_merged", "spatial_join",
                 "poi_match", "region_aggregates", "od_matrix", "route_restore",
-                "density_estimate", "quality_reports", "snapshots", "exports", "checkpoints"]:
+                "density_estimate", "quality_reports", "snapshots", "exports",
+                "checkpoints", "point_verdicts", "dedup_groups", "merge_reviews"]:
         (tmpdir / sub).mkdir(parents=True, exist_ok=True)
     yield tmpdir
     base_mod.DATA_ROOT = original_root

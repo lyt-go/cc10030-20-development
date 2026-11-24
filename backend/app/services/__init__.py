@@ -17,6 +17,7 @@ from app.services.route_restore import RouteRestoreService
 from app.services.density_estimate import DensityEstimateService
 from app.services.geo_quality import GeoQualityService
 from app.services.dedup_merge import DedupMergeService
+from app.services.merge_review import MergeReviewService
 from app.services.geo_snapshot import GeoSnapshotService
 from app.services.geo_backfill import GeoBackfillService
 from app.services.geo_export import GeoExportService
@@ -37,6 +38,7 @@ SERVICES: dict[str, BaseModuleService] = {
     "density_estimate": DensityEstimateService(),
     "geo_quality": GeoQualityService(),
     "dedup_merge": DedupMergeService(),
+    "merge_review": MergeReviewService(),
     "geo_snapshot": GeoSnapshotService(),
     "geo_backfill": GeoBackfillService(),
     "geo_export": GeoExportService(),
